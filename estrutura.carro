@@ -1,0 +1,37 @@
+#include <iostream>
+ 
+
+using namespace std;
+
+struct carro {
+    string modelo;
+    string marca;
+};
+
+int main() {
+    carro carros1[1] = {"Ferrari"};
+    carro carros2[1] = {"Mustang"};
+    carro carros3[1] = {"Lamborghini"};
+
+    int escolha = 1;
+
+    cout << "Escolha um número de carro 1 ou 2 ou 3: " ;
+    cin >> escolha;
+
+    switch(escolha) {
+        case 1:
+            cout << "Modelo: " << carros1[0].modelo << ", Marca: " << carros1[0].marca << endl;
+            break;
+        case 2:
+            cout << "Modelo: " << carros2[0].modelo << ", Marca: " << carros2[0].marca << endl;
+            break;
+        case 3:
+            cout << "Modelo: " << carros3[0].modelo << ", Marca: " << carros3[0].marca << endl;
+            break;
+        default:
+            cerr << "Por favor, escolha 1, 2 ou 3." << endl;
+            break;
+    }
+
+    return 0;
+}
