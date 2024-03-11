@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+/**
+ * @brief Função q calcula a soma dos dois numeros até um determindado limite
+ * @param limite -limite para a soma
+ * @return int soma dos numeros até ao limite
+*/
+
+
+    int somaNumeros(int limite){
+        int soma=0;
+
+        for (int i = 1; i <=limite; i++)
+        {
+            soma += i;
+        }
+        
+        
+        return soma;
+
+    }
+
+
+    int oLimite(){
+        int limite;
+        cout << "Escolhe o valor limite: ";
+        cin >> limite;
+        return limite; 
+
+
+    }
+
+int main(){
+
+
+
+    int limite;
+
+
+    system("clear");
+    limite = oLimite();
+    cout << "total: " << somaNumeros(limite) << endl;
+    
+
+
+
+    return 0;
+}
