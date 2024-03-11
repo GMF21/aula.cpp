@@ -1,0 +1,2 @@
+Em C++, using namespace std é uma diretiva que simplifica o código, permitindo que você use os identificadores da biblioteca padrão  
+sem precisar digitar o prefixo std:: toda vez. O std é o namespace padrão que engloba grande parte das classes, funções e objetos da biblioteca padrão do C++.
